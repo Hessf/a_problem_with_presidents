@@ -21,7 +21,7 @@ Then, using your newly-created data and **Python or R**, calculate the mean, wei
 
 Assemble your tables and plot into a single report with a title, author and date. Start the report with a 3 or 4 sentence summary of what you found, the body should have your tables and plot and any commentary about your methods or assumptions you think the reader would need to know. Finish the report with a conclusions section, where you state the conclusions you reached through this analysis.
 
-To finish, commit all your code and your report to your personal Github fork of this repository, and then email back CTS-IT with a link to your completed problem.
+To finish, commit all your code and your report in pdf form to your personal Github fork of this repository, and then email back CTS-IT with a link to your completed problem.
 
 During the interview phase, we will ask for a tour of your code. You must be able to explain your methodology, the results, your choice in plot(s), and what you chose to include in your report.
 
