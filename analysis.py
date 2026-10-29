@@ -34,7 +34,7 @@ shortest  = df_sorted_btm.head(10)[['PRESIDENT', 'years_lived', 'months_lived', 
 print("#### 10 Longest Lifespans\n")
 print(longest.to_markdown(index=False))
 print("\n#### 10 Shortest Lifespans\n")
-print(shortest.to_markdown(index=False)) #Prints the two tables
+print(shortest.to_markdown(index=False)) #Prints the two tables with 10 longest and shortest lifespans
 
 mean_lifespan_days = np.round((np.mean(df_alive_removed['lifespan_in_days'])),0) #Gets the mean lifespan in days
 med_lifespan_days = np.round((np.median(df_alive_removed['lifespan_in_days'])),0) #Gets the median lifespan in days
@@ -65,8 +65,8 @@ plt.barh(df_sorted_btm["PRESIDENT"], df_sorted_btm["lifespan_in_years"],color='l
 plt.axvline(x=float(mean_lifespan_days/365.2425),color='red',linewidth=2,label='Average lifespan') #Adds a vertical line showing the average lifespan
 plt.axvline(x=float(med_lifespan_days/365.2425),color='black',linewidth=2,label='Median lifespan') #Does the same, with median lifespan
 plt.xlabel('President')
-plt.ylabel('Lifespan (years)') #Labels the axes of the graph
-plt.title('Lifespans of Deceased Presidents')
+plt.ylabel('Lifespan (years)')
+plt.title('Lifespans of Deceased Presidents') #Labels the axes of the graph
 plt.tight_layout()
-plt.legend()
+plt.legend() #Adds a legend to the graph
 plt.show() #Displays the graph
