@@ -66,7 +66,7 @@ plt.axvline(x=float(mean_lifespan_days/365.2425),color='red',linewidth=2,label='
 plt.axvline(x=float(med_lifespan_days/365.2425),color='black',linewidth=2,label='Median lifespan') #Does the same, with median lifespan
 plt.ylabel('President')
 plt.xlabel('Lifespan (years)')
-plt.title('Lifespans of Deceased Presidents') #Labels the axes of the graph
-plt.tight_layout()
+plt.title('Lifespans of Deceased Presidents') #Labels the axes and title of the graph
+plt.tight_layout() #Prevents president names from getting cut off on left side
 plt.legend() #Adds a legend to the graph
 plt.show() #Displays the graph
