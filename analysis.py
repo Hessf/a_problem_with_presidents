@@ -64,8 +64,8 @@ plt.figure(figsize = (10,10)) #Creates the visual plot of lifespans
 plt.barh(df_sorted_btm["PRESIDENT"], df_sorted_btm["lifespan_in_years"],color='lightblue',height=0.8)
 plt.axvline(x=float(mean_lifespan_days/365.2425),color='red',linewidth=2,label='Average lifespan') #Adds a vertical line showing the average lifespan
 plt.axvline(x=float(med_lifespan_days/365.2425),color='black',linewidth=2,label='Median lifespan') #Does the same, with median lifespan
-plt.xlabel('President')
-plt.ylabel('Lifespan (years)')
+plt.ylabel('President')
+plt.xlabel('Lifespan (years)')
 plt.title('Lifespans of Deceased Presidents') #Labels the axes of the graph
 plt.tight_layout()
 plt.legend() #Adds a legend to the graph
